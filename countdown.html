@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>count down</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/countdown.css">
+</head>
+<body>
+	<div class="center">
+		<h3><span>www.ssctechnical.com</span><br>Coming soon</h3>
+		<div id="clock"></div>
+		
+	</div>
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  <script src="countdown.js.js"></script>
+  <script type="text/javascript">
+  	$('#clock').countdown('2020/7/4', function(event)
+  	{
+  		var $this = $(this).html(event.strftime('' 
+  			+ '<div><span>%w</span><span>Weeks</span></div>'
+  			+ '<div><span>%d</span><span>Days</span></div>'
+  			+ '<div><span>%H</span><span>Hours</span></div>'
+  			+ '<div><span>%M</span><span>Minute</span></div>'
+  			+ '<div><span>%S</span><span>Second</span></div>'
+         ))
+  	})
+  </script>
+</body>
+</html>
